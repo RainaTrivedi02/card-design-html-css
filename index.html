@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS</title>
+  <style>
+    .contanier {
+      display: flex;
+      justify-content: space-evenly;
+      background-color: rgb(229, 226, 226);
+    }
+
+    .item {
+      height: 380px;
+      width: 300px;
+      padding: 10px;
+      margin: 5px auto;
+      border: 1px solid rgb(206, 203, 203);
+      border-radius: 10px;
+      background-color: white;
+    }
+
+    .item-hover {
+      border: solid rgb(206, 203, 203);
+    }
+
+    .main-img {
+      border-radius: 10px 10px 0px 0px;
+      margin-bottom: 5px;
+    }
+
+    .project-heading {
+      font-size: 23px;
+      font-weight: 600;
+      font-family: cursive;
+    }
+
+    .sub-container {
+      padding-left: 10px;
+      padding-right: 10px;
+
+    }
+
+    .course-name {
+      background-color: rgb(72, 180, 235);
+      padding top: 10px;
+      border-radius: 4px;
+
+    }
+
+    .project-description {
+      font-size: 14px;
+      color: rgb(105, 105, 105);
+    }
+
+    .tech-stack {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .tech {
+      background-color: rgb(220, 220, 220);
+      padding: 4px 20px;
+      border-radius: 20px;
+      margin-right: 10px;
+      font-size: 12px;
+    }
+
+    .project-duration {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      align-items: center;
+      margin: 10px;
+    }
+
+    .project-duration-sub-info {
+      display: flex;
+      align-items: center;
+      margin-right: 5px;
+    }
+
+    .project-duration-info {
+      display: flex;
+      align-items: center;
+    }
+
+    .calendar-img {
+      margin-right: 5px;
+    }
+
+    .user-profile-img {
+      border-radius: 50%;
+      margin-right: 5px;
+    }
+
+    .hr-line {
+      color: rgb(207, 206, 206);
+      margin: 20px 0px;
+    }
+
+    .additional {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .additional-sub-info {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .additional-sub-info-2 {
+      color: blue;
+      cursor: pointer;
+      font-weight: 500px;
+      font-size: 14px;
+    }
+
+    .info-cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 40px 20px;
+      gap: 20px;
+    }
+
+    .infocard {
+      width: 250px;
+      background: #fff;
+      padding: 15px;
+      border-radius: 8px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgb(0, 0, 0);
+      transition: 0.3s;
+    }
+
+    .infocard:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 14px rgb(0, 0, 0);
+    }
+
+    .infocard img {
+      width: 100%;
+      height: 170px;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="contanier">
+    <div class="item">
+      <img src="./images/image.png" width="300px" class="main-img" />
+      <div class="sub-container">
+        <span class="project-heading"> Rode to code</span>
+        <br />
+        <span class="course-name">Internship Cohort Program 6.0</span>
+        <p class="project-description">
+          This project serves as the foundationfor an e-commerce website speializing in the sale of eletronic gadgets
+          with....
+        </p>
+        <div class="tech-stack">
+          <span class="tech">HTML</span>
+          <span class="tech">CSS</span>
+          <span class="tech">Github</span>
+        </div>
+        <div class="project-duration">
+
+          <div class="project-duration-sub-info">
+            <img src="./images/calender.jpg" height="15px" class="calendar-img" />
+            <span class="project-duration-info">Apr 2025-Apr 2026</span>
+          </div>
+
+          <div class="project-duration-sub-info">
+            <img src="./images/237492790.jpeg" height="20px" class="user-profile-img">
+            <span class="project-duration-info">Raina Trivedi</span>
+          </div>
+        </div>
+        <hr class="hr-line" />
+        <div class="additional">
+          <div class="additional-sub-info">
+            <img src="./images/deafult-clap-logo.47354508.svg" height="22px" style="margin-right: 5px;" />
+            <span style="margin-right: 5px">123</span>
+            <img src="./images/comment-story.svg" height="25px" style="margin-right: 5px;" />
+            <span style="margin-right:10px">14</span>
+            <img src="./images/share-logo.d24cfab1.svg" height="20px" />
+          </div>
+          <div>
+            <span class="additional-sub-info-2">see more -></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  <div class="infocard">
+    <img src="./images/core.jpeg" alt="Core Components">
+    <h3>Core Components</h3>
+    <p>
+      Breath control, physical postures, mindful meditation, and deep relaxation form the core pillars
+      of every yoga journey.
+    </p>
+  </div>
+
+
+  <div class="infocard">
+    <img src="./images/goal.png" alt="Goals">
+    <h3>Goals</h3>
+    <p>
+      Yoga aims to enhance flexibility, strength, inner calm, emotional balance, and overall
+      well-being through consistent practice.
+    </p>
+  </div>
+
+
+  <div class="infocard">
+    <img src="./images/variation.png" alt="Modern Yoga">
+    <h3>Modern Variations</h3>
+    <p>
+      Today yoga includes Hatha, Vinyasa, Power Yoga, Aerial Yoga, Prenatal Yoga, and many other
+      styles that suit all fitness levels.
+    </p>
+  </div>
+  </div>
+</body>
+
+</html>
